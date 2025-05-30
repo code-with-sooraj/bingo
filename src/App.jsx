@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
 import "./App.css"; // Assuming you have some basic styles
 
-const socket = io("http://localhost:5000");
+// const socket = io("http://localhost:5000");
+const socket = io("https://bingo-backend-95kp.onrender.com")
 
 function App() {
   const [name, setName] = useState("");
